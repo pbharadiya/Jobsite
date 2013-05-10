@@ -1,0 +1,46 @@
+<header>
+<div id="head">
+<div class="wrap">
+
+
+<%=link_to( image_tag("Jobsite_logo.png"), "/") %>
+
+<div class="out">
+  <div class="in">
+    <div class="quicknav">
+      <% if user_signed_in? %>
+        <%= link_to "My account", "#" %>
+      <% else %>
+        <%= link_to "Sign in", new_user_session_path %>
+      <% end %>
+      |
+      <%= link_to "Contact Us", "#" %>
+      |
+      <%= link_to "About", "#" %>
+      |
+      <%= link_to "FAQ", "#" %>
+			|
+      <% if user_signed_in? %>
+        <%= link_to "Sign out", destroy_user_session_path, :method => "delete" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div id="intro">
+  <div class="wrap">
+    <h2>Welcome to Working With Rails</h2>
+    <ul>
+      <li><a href="http://www.workingwithrails.com/forums">Discussion Forums</a></li>
+      <li><a href="http://www.workingwithrails.com/jobs">Rails Jobs</a></li>
+    </ul>
+  </div>
+</div>
+<div id="path">
+<div class="wrap">
+<p>
+&nbsp;
+</p>
+</div>
+</div>
+</header>

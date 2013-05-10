@@ -1,0 +1,236 @@
+#head, #intro, #path, #footer {
+  float: left;
+  width: 100%;
+}
+
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#head {
+  height: 117px;
+  overflow: hidden;
+  
+  .wrap {
+    position: relative;
+  }
+  h1 {
+    position: absolute;
+    top: 33px;
+    width: 307px;
+    height: 62px;
+    
+    a {
+      display: block;
+      width: 307px;
+      height: 62px;
+    }
+    span {
+      display: none;
+    }
+  }
+  .in {
+    float: left;
+    height: 28px;
+    
+    padding-right: 30px;
+  }
+  .out {
+    float: right;
+    height: 28px;
+    
+    padding-left: 30px;
+  }
+  .quicknav {
+    font-size: 1.1em;
+    float: left;
+    height: 22px;
+    padding-top: 6px;
+    
+    a {
+      text-decoration: none;
+      margin: 0 5px;
+      &:hover {
+        color: #fb001f;
+      }
+    }
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    top: 89px;
+    height: 28px;
+    font-size: 1.2em;
+    list-style: none;
+  }
+  li {
+    float: left;
+    height: 28px;
+    margin-left: 1px;
+    
+    a {
+      text-decoration: none;
+      display: block;
+      height: 23px;
+      float: left;
+      padding: 5px 14px 0 14px;
+      
+    }
+    &.spec {
+      margin-left: 10px;
+      
+      a {
+        
+        color: #950900;
+      }
+    }
+    &.active {
+      height: 32px;
+      
+      position: relative;
+      top: -4px;
+      a {
+        color: white;
+        float: left;
+        
+      }
+    }
+    a:hover {
+      color: white;
+    }
+  }
+}
+
+#intro .wrap {
+  padding: 0 300px 0px 0;
+  width: 575px;
+}
+#intro {
+  color: white;
+  background-color: #9c1526;
+  .wrap {
+    padding: 9px 200px 22px 0;
+    width: 675px;
+    background: #9c1526 image-url("Jobsite_logo.png") no-repeat top right;
+    border-bottom: 1px solid #9c1526;
+    border-top: 1px solid #9c1526;
+  }
+  h2 {
+    margin: 20px 0 6px 0;
+    font-size: 2.4em;
+    color: #fff4d5;
+  }
+  p {
+    font-style: italic;
+    font-size: 1.4em;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .link {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-decoration: underline;
+    color: #fff4d5;
+  }
+  ul {
+    height: 32px;
+    margin: 30px 0 15px 0;
+    font-size: 1.2em;
+    list-style: none;
+  }
+  li {
+    float: right;
+    height: 32px;
+    margin-left: 9px;
+    
+    a {
+      text-decoration: none;
+      display: block;
+      height: 23px;
+      float: left;
+      padding: 7px 14px 0 27px;
+      
+      font-weight: bold;
+      &:hover {
+        color: #fb001f;
+      }
+    }
+  }
+}
+
+#path {
+  
+  height: 36px;
+  p {
+    float: left;
+    width: 599px;
+    overflow: hidden;
+    margin: 0 0 15px 0;
+    padding-top: 10px;
+    font-family: "ms sans serif", geneva, sans-serif;
+    font-size: 11px;
+    color: #393938;
+    span {
+      color: #6f6f6f;
+    }
+    a {
+      text-decoration: none;
+      color: #333333;
+      padding-right: 11px;
+      margin-right: 1px;
+      background-image: url(/images/ico_path.gif);
+      background-position: right;
+      background-repeat: no-repeat;
+      &:hover {
+        color: #c3182e;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+#footer {
+  
+  height: 125px;
+  padding-top: 20px;
+  color: #cdcdcd;
+  font-size: 1.1em;
+  font-family: arial, helvetica, sans-serif;
+  .left {
+    width: 430px;
+  }
+  .right {
+    width: 430px;
+    text-align: right;
+  }
+  .dimmed {
+    color: #747473;
+  }
+  a {
+    color: #cdcdcd;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .nav a {
+    color: #ffc103;
+  }
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.form {
+  margin:30px;
+  width: 600px
+}
