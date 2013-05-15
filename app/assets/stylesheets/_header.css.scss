@@ -11,16 +11,16 @@
 #head {
   height: 117px;
   overflow: hidden;
-  
+  background: white image-url("bg_body.gif") repeat-x;
   .wrap {
     position: relative;
   }
   h1 {
     position: absolute;
-    top: 33px;
-    width: 307px;
-    height: 62px;
-    
+    top: 4px;
+    width: 114px;
+    height: 112px;
+    background: image-url("Jobsite_logo.png") no-repeat;
     a {
       display: block;
       width: 307px;
@@ -33,13 +33,13 @@
   .in {
     float: left;
     height: 28px;
-    
+    background: url("/system/1/assets/files/000/000/220/220/203b6f6a9/original/quicknav_right.gif") no-repeat top right;
     padding-right: 30px;
   }
   .out {
     float: right;
     height: 28px;
-    
+    background: url("/system/1/assets/files/000/000/221/221/da4728932/original/quicknav_left.gif") no-repeat top left;
     padding-left: 30px;
   }
   .quicknav {
@@ -47,7 +47,7 @@
     float: left;
     height: 22px;
     padding-top: 6px;
-    
+    background: url("/system/1/assets/files/000/000/218/218/79f6fcc62/original/bg_quicknav.gif") repeat-x top;
     a {
       text-decoration: none;
       margin: 0 5px;
@@ -68,32 +68,32 @@
     float: left;
     height: 28px;
     margin-left: 1px;
-    
+    background: #ffc02d url("/system/1/assets/files/000/000/222/222/0e80bb385/original/bg_nav1.gif") no-repeat right;
     a {
       text-decoration: none;
       display: block;
       height: 23px;
       float: left;
       padding: 5px 14px 0 14px;
-      
+      background: url("/system/1/assets/files/000/000/219/219/8c8f4cb93/original/bg_nav.gif") no-repeat;
     }
     &.spec {
       margin-left: 10px;
-      
+      background: #ff7909 url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat right;
       a {
-        
+        background: url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat;
         color: #950900;
       }
     }
     &.active {
       height: 32px;
-      
+      background: #9c1526 url("/system/1/assets/files/000/000/224/224/ab78ef3af/original/bg_navactive1.gif") no-repeat top right;
       position: relative;
       top: -4px;
       a {
         color: white;
         float: left;
-        
+        background: url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat;
       }
     }
     a:hover {
@@ -112,7 +112,7 @@
   .wrap {
     padding: 9px 200px 22px 0;
     width: 675px;
-    background: #9c1526 image-url("Jobsite_logo.png") no-repeat top right;
+    background: #9c1526 image-url("bg_intro.gif") no-repeat top right;
     border-bottom: 1px solid #9c1526;
     border-top: 1px solid #9c1526;
   }
@@ -228,9 +228,4 @@
 	visibility: hidden;
 	line-height: 0;
 	height: 0;
-}
-
-.form {
-  margin:30px;
-  width: 600px
 }
