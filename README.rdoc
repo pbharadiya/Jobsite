@@ -1,29 +1,29 @@
 Hi all,
 
-Jobsite is the site to search for jobs which suites you.
+== Jobsite is the site to search for jobs which suites you.
 
 Right now it's under construction.
 
 :: For developer ::
   To contribute to this site,
 
-  Step 1 : clone to your local machine
+Step 1 : clone to your local machine
     $ git clone git@github.com:pbharadiya/Jobsite.git
 
-  Step 2 :
+Step 2 :
     $ bundle install
 
-  Step 3 : run migration
+Step 3 : run migration
     $ rake db:create
     $ rake db:migrate
 
-  Step 4 : create new branch
+Step 4 : create new branch
     $ git -b <new branch name>
 
-  Step 5 :
+Step 5 :
     $ git checkout <your branch name>
 
-  Step 6 : push the code to remote branch
+Step 6 : push the code to remote branch
     $ git push origin <your branch name>
 
 Stay tuned for further updates.
