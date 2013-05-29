@@ -1,6 +1,15 @@
+
 #head, #intro, #path, #footer {
   float: left;
   width: 100%;
+  a {
+    color: #A20000;
+ }
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 .wrap {
@@ -9,7 +18,7 @@
 }
 
 #head {
-  height: 117px;
+  height: 134px;
   overflow: hidden;
   background: white image-url("bg_body.gif") repeat-x;
   .wrap {
@@ -23,8 +32,8 @@
     background: image-url("Jobsite_logo.png") no-repeat;
     a {
       display: block;
-      width: 307px;
-      height: 62px;
+      width: 114px;
+      height: 112px;
     }
     span {
       display: none;
@@ -33,13 +42,13 @@
   .in {
     float: left;
     height: 28px;
-    background: url("/system/1/assets/files/000/000/220/220/203b6f6a9/original/quicknav_right.gif") no-repeat top right;
+    background: image-url("quicknav_right.gif") no-repeat top right;
     padding-right: 30px;
   }
   .out {
     float: right;
     height: 28px;
-    background: url("/system/1/assets/files/000/000/221/221/da4728932/original/quicknav_left.gif") no-repeat top left;
+    background: image-url("quicknav_left.gif") no-repeat top left;
     padding-left: 30px;
   }
   .quicknav {
@@ -47,7 +56,7 @@
     float: left;
     height: 22px;
     padding-top: 6px;
-    background: url("/system/1/assets/files/000/000/218/218/79f6fcc62/original/bg_quicknav.gif") repeat-x top;
+    background: image-url("bg_quicknav.gif") repeat-x top;
     a {
       text-decoration: none;
       margin: 0 5px;
@@ -58,42 +67,45 @@
   }
   ul {
     position: absolute;
-    right: 0;
-    top: 89px;
-    height: 28px;
     font-size: 1.2em;
     list-style: none;
-  }
+    left: 539px;
+    top: 105px;
+    margin-top: 0px;
+    width: 454px;
+    right: 0px;
+    margin-bottom: 0px;
+}
   li {
     float: left;
     height: 28px;
-    margin-left: 1px;
-    background: #ffc02d url("/system/1/assets/files/000/000/222/222/0e80bb385/original/bg_nav1.gif") no-repeat right;
+    margin-left: 2px;
+    background: #ffc02d image-url("bg_nav1.gif") no-repeat right;
     a {
       text-decoration: none;
       display: block;
       height: 23px;
       float: left;
       padding: 5px 14px 0 14px;
-      background: url("/system/1/assets/files/000/000/219/219/8c8f4cb93/original/bg_nav.gif") no-repeat;
+      background: image-url("bg_nav.gif") no-repeat;
     }
     &.spec {
       margin-left: 10px;
-      background: #ff7909 url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat right;
+      background: #ff7909 image-url("bg_navspec1.gif") no-repeat right;
       a {
-        background: url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat;
+        background: image-url("bg_navspec1.gif") no-repeat;
         color: #950900;
       }
     }
     &.active {
       height: 32px;
-      background: #9c1526 url("/system/1/assets/files/000/000/224/224/ab78ef3af/original/bg_navactive1.gif") no-repeat top right;
+      background: #9c1526 image-url("bg_navactive1.gif") no-repeat top right;
       position: relative;
       top: -4px;
       a {
         color: white;
         float: left;
-        background: url("/system/1/assets/files/000/000/223/223/6f1e30a17/original/bg_navspec1.gif") no-repeat;
+        background: image-url("bg_navspec1.gif") no-repeat;
       }
     }
     a:hover {
@@ -118,7 +130,7 @@
   }
   h2 {
     margin: 20px 0 6px 0;
-    font-size: 2.4em;
+    font-size: 2.1em;
     color: #fff4d5;
   }
   p {
@@ -138,20 +150,22 @@
     height: 32px;
     margin: 30px 0 15px 0;
     font-size: 1.2em;
-    list-style: none;
+    list-style: none outside none;
+    width: 537px;
+    margin-bottom: -23px;
   }
   li {
     float: right;
     height: 32px;
     margin-left: 9px;
-    
+    background: image-url("bg_introli1.gif") no-repeat scroll right center transparent;
     a {
       text-decoration: none;
       display: block;
       height: 23px;
       float: left;
       padding: 7px 14px 0 27px;
-      
+      background: image-url("bg_introli.gif") no-repeat scroll 0 0 transparent;
       font-weight: bold;
       &:hover {
         color: #fb001f;
@@ -161,7 +175,7 @@
 }
 
 #path {
-  
+  background: image-url("bg_content.gif") repeat-x scroll 0 0 #D9D4C2;
   height: 36px;
   p {
     float: left;
@@ -180,7 +194,7 @@
       color: #333333;
       padding-right: 11px;
       margin-right: 1px;
-      background-image: url(/images/ico_path.gif);
+      background-image: image-url("/images/ico_path.gif");
       background-position: right;
       background-repeat: no-repeat;
       &:hover {
@@ -222,10 +236,10 @@
 }
 
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
