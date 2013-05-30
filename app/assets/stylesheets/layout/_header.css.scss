@@ -1,10 +1,9 @@
-
-#head, #intro, #path, #footer {
+#head #intro #path {
   float: left;
   width: 100%;
-  a {
-    color: #A20000;
- }
+   background-color: #FFFFFF;
+  color: #464646;
+  font-family: "trebuchet ms",arial,helvetica,sans-serif;
   background: none repeat scroll 0 0 transparent;
   border: 0 none;
   outline: 0 none;
@@ -18,7 +17,7 @@
 }
 
 #head {
-  height: 134px;
+  height: 116px;
   overflow: hidden;
   background: white image-url("bg_body.gif") repeat-x;
   .wrap {
@@ -26,7 +25,7 @@
   }
   h1 {
     position: absolute;
-    top: 4px;
+    top: 20px;
     width: 114px;
     height: 112px;
     background: image-url("Jobsite_logo.png") no-repeat;
@@ -52,14 +51,15 @@
     padding-left: 30px;
   }
   .quicknav {
-    font-size: 1.1em;
-    float: left;
-    height: 22px;
+    font-size: x-small;
     padding-top: 6px;
+    float: left;
+    height: 34px;
     background: image-url("bg_quicknav.gif") repeat-x top;
+    color: #464646;
     a {
       text-decoration: none;
-      margin: 0 5px;
+      margin: 0;
       &:hover {
         color: #fb001f;
       }
@@ -70,7 +70,7 @@
     font-size: 1.2em;
     list-style: none;
     left: 539px;
-    top: 105px;
+    top: 86px;
     margin-top: 0px;
     width: 454px;
     right: 0px;
@@ -130,7 +130,7 @@
   }
   h2 {
     margin: 20px 0 6px 0;
-    font-size: 2.1em;
+    font-size: 1.7em;
     color: #fff4d5;
   }
   p {
@@ -158,13 +158,13 @@
     float: right;
     height: 32px;
     margin-left: 9px;
-    background: image-url("bg_introli1.gif") no-repeat scroll right center transparent;
+    background: image-url("bg_introli1.gif") no-repeat scroll 0 0 transparent;
     a {
       text-decoration: none;
       display: block;
       height: 23px;
       float: left;
-      padding: 7px 14px 0 27px;
+      padding: 8px 14px 0 27px;
       background: image-url("bg_introli.gif") no-repeat scroll 0 0 transparent;
       font-weight: bold;
       &:hover {
@@ -203,43 +203,4 @@
       }
     }
   }
-}
-
-#footer {
-  
-  height: 125px;
-  padding-top: 20px;
-  color: #cdcdcd;
-  font-size: 1.1em;
-  font-family: arial, helvetica, sans-serif;
-  .left {
-    width: 430px;
-  }
-  .right {
-    width: 430px;
-    text-align: right;
-  }
-  .dimmed {
-    color: #747473;
-  }
-  a {
-    color: #cdcdcd;
-    text-decoration: none;
-    &:hover {
-      color: white;
-      text-decoration: underline;
-    }
-  }
-  .nav a {
-    color: #ffc103;
-  }
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
 }

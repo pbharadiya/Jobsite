@@ -1,0 +1,56 @@
+#content {
+  background: none repeat scroll 0 0 #FFFFFF;
+  font-size: 1.4em;
+  line-height: 150%;
+  padding-top: 20px;
+  float: left;
+  width: 100%;
+  .wrap {
+    background: none repeat scroll 0 0 #FFFFFF;
+    }
+
+  #mainnoside {
+    float: left;
+    padding-bottom: 30px;
+    width: 980px;
+    color: #393938;
+    font-size: 0.7em;
+    .field_with_errors {
+      label {
+        color: #7B040F;
+      }
+    }
+  }
+
+  .alert_error {
+    #error_explanation {
+      display: block;
+      width: 95%;
+      margin: 20px 3% 0 3%;
+      margin-top: 20px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: #f3d9d9 image-url("admin/icn_alert_error.png") no-repeat;
+      background-position: 10px 10px;
+      border: 1px solid #D20009;
+      color: #7B040F;
+      padding: 10px 0;
+      text-indent: 40px;
+      font-size: 14px;
+      li {
+        list-style: none outside none;
+      }
+      h2 {
+        color: #7B040F;
+        margin: -2px 0 10px;
+      }
+    }
+  }
+  td {
+    padding: 0px 17px 0px 0px;
+  }
+  th {
+    text-align: left;
+}
+}

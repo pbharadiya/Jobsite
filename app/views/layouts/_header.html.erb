@@ -2,47 +2,47 @@
   <div id="head">
     <div class="wrap">
       <h1><%=link_to content_tag(:span, 'Jobsite'), '/' %></h1>
-			<div class="out">
+      <div class="out">
         <div class="in">
           <div class="quicknav">
             <% if user_signed_in? %>
               <%= link_to "My account", "#" %>
             <% else %>
               <%= link_to "Sign in", new_user_session_path %>
-						<% end %>
-						|
-						<%= link_to "Contact Us", "#" %>
-						|
-						<%= link_to "About", "#" %>
-						|
-						<%= link_to "FAQ", "#" %>
-						<% if user_signed_in? %>
-						|
-						<%= link_to "Sign out", logout_path, :method => :delete %>
-						<% end %>
+            <% end %>
+            |
+            <%= link_to "Contact Us", "#" %>
+            |
+            <%= link_to "About", "#" %>
+            |
+            <%= link_to "FAQ", "#" %>
+            <% if user_signed_in? %>
+            |
+            <%= link_to "Sign out", logout_path, :method => :delete %>
+            <% end %>
           </div>
         </div>
-			</div>
-			<ul class="masternav">
-			  <li>
-			    <%= link_to "Home", "#" %>
-			  </li>
-			  <li>
-			    <%= link_to "Jobs", "#" %>
-			  </li>
-			  <li>
-			    <%= link_to "Forums", "#" %>
-			  </li>
-			  <li>
-			    <%= link_to "People", "#" %>
-			  </li>
-			  <li>
-			    <%= link_to "Companies", "#" %>
-			  </li>
-			  <li>
-			    <%= link_to "Sites", "#" %>
-			  </li>
-			</ul>
+      </div>
+      <ul class="masternav">
+        <li>
+          <%= link_to "Home", "#" %>
+        </li>
+        <li>
+          <%= link_to "Jobs", "#" %>
+        </li>
+        <li>
+          <%= link_to "Forums", "#" %>
+        </li>
+        <li>
+          <%= link_to "People", admin_users_path %>
+        </li>
+        <li>
+          <%= link_to "Companies", "#" %>
+        </li>
+        <li>
+          <%= link_to "Sites", "#" %>
+        </li>
+      </ul>
     </div>
   </div>
   <div id="intro">
@@ -51,7 +51,7 @@
         <ul>
           <li><%= link_to "Discussion Forums", "#" %></li>
           <li><%= link_to "Rails Jobs", "#" %></li>
-				</ul>
+        </ul>
     </div>
   </div>
   <div id="path">
@@ -61,4 +61,4 @@
       </p>
     </div>
   </div>
-	
+  

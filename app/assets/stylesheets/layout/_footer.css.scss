@@ -1,0 +1,41 @@
+#footer {
+  float: left;
+  width: 100%;
+  height: 125px;
+  padding-top: 20px;
+  background: image-url("bg_footer.gif") repeat-x scroll 0 0 transparent;
+  color: #cdcdcd;
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  .wrap {
+    width: 980px;
+    margin: 0 auto;
+    .clearfix {
+      display: inline-block;
+      .tl {
+        text-align: left;
+      }
+    }
+  }
+  .left {
+    width: 430px;
+  }
+  .right {
+    width: 430px;
+    text-align: right;
+  }
+  .dimmed {
+    color: #747473;
+  }
+  a {
+    color: #cdcdcd;
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .nav a {
+    color: #ffc103;
+  }
+}

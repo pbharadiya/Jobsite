@@ -11,8 +11,5 @@
  *= require_self
  *= require_tree .
  */
-#frontpage {
-  background-color: #FFFFFF;
-    color: #464646;
-    font-family: "trebuchet ms",arial,helvetica,sans-serif;
-}
+
+@import "layout/all";

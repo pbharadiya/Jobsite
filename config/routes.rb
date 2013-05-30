@@ -1,7 +1,15 @@
 Jobsite::Application.routes.draw do
 
+  root :to => 'static_pages#home'
+
   devise_for :users do
     get 'logout' => 'devise/sessions#destroy'
+  end
+
+  namespace :admin do
+    resources :posts
+    resources :users, :only => [:index]
+    match 'dashboard' => 'dashboard#index', :via => :get
   end
 
   # The priority is based upon order of creation:
@@ -50,17 +58,9 @@ Jobsite::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  
-  namespace :admin do
-    resources :posts
-    resources :users, :only => [:index]
-    match 'dashboard' => 'dashboard#index', :via => :get
-    #match 'admin' => 'session#index', :via => :get
-  end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'static_pages#home'
 
   # See how all your routes lay out with "rake routes"
 
