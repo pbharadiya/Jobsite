@@ -1,33 +1,37 @@
-Hi all,
-
-== Jobsite is the site to search for jobs which suites you.
+== Jobsite is the site to search for jobs which suite you.
 
 Right now it's under construction.
 
-:: For developer ::
+=== Contributing
 To contribute to this site,
 
-Step 1 : clone to your local machine
-    $ git clone git@github.com:pbharadiya/Jobsite.git
+Step 1 : Fork it and then clone that repo to your local machine
+    $ git clone git@github.com:yourusername/Jobsite.git
 
-Step 2 :
+Step 3 : Create your feature branch
+    $ git checkout -b my-new-feature
+
+Step 4 :
     $ bundle install
 
-Step 3 : run migration
+Step 5 : run migration
     $ rake db:create
     $ rake db:migrate
 
-Step 4 : create new branch
-    $ git -b <new branch name>
+Step 5 : Test it to your local server and Commit your changes
+    $ rails s
+    $ git commit -am 'Add some feature'
 
-Step 5 :
-    $ git checkout <your branch name>
+Step 6 : Push to the branch
+    $ git push origin my-new-feature
 
-Step 6 : push the code to remote branch
-    $ git push origin <your branch name>
+Step 7 : Create new Pull Request
+
+
 
 Stay tuned for further updates.
-Dt. 28-May-2013
+
+Dt. 11-Apr-2014
 
 Thanks,
 
